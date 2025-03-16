@@ -1,4 +1,4 @@
-
+"use client"
 // app/ftr/[id]/page.tsx - FTR Detail Page
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -9,9 +9,11 @@ import {
   Calendar, Clock, AlertCircle, User, Briefcase, MapPin, 
   FileText, Building, CheckCircle, XCircle
 } from "lucide-react";
+import { useParams } from "next/navigation";
 
-export default function FTRDetail({ params }: { params: { id: string } }) {
-  // Mock data
+export default function FTRDetail() {
+  const params = useParams();
+  
   const ftr = {
     id: params.id,
     status: "Pending",

@@ -32,7 +32,7 @@ export default function CreateFTR() {
             <CardContent className="grid grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="dasId">DAS ID</Label>
-                <Input id="dasId" value="EMP123" disabled />
+                <Input id="dasId" value="A93****" disabled />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="gender">Gender</Label>
